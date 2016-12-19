@@ -11,7 +11,12 @@
     <fieldset>
       <legend>Text input</legend>
       <label>Text</label>
-      <input type="text">
+      <input type="text" size="25" maxlength="5" placeholder="here goes text">
+    </fieldset>
+    <fieldset>
+      <legend>Password input</legend>
+      <label>Password</label>
+      <input type="password" size="25" maxlength="5">
     </fieldset>
     <fieldset>
       <legend>Number input</legend>
@@ -60,6 +65,7 @@
         <span>Tap it</span>
         <input type="radio" name="test">
       </label>
+      <input type="reset" value="Reset">
     </fieldset>
     <fieldset>
       <legend>radio with id</legend>
@@ -77,6 +83,53 @@
       <input type="submit" value="Subm">
       <button>Button</button>
     </fieldset>
+    <fieldset>
+      <textarea cols="30" rows="10"></textarea>
+    </fieldset>
+    <fieldset>
+      <select>
+        <option value="">text1</option>
+        <option selected value="">text2</option>
+        <option value="">text3</option>
+        <option value="">text4</option>
+        <option value="">text5</option>
+      </select>
+      <select size="3">
+        <option value="">text1</option>
+        <option selected value="">text2</option>
+        <option value="">text3</option>
+        <option value="">text4</option>
+        <option value="">text5</option>
+      </select>
+    </fieldset>
   </form>
+  
+  
+  
+  
+  
+  <form action="">
+    <fieldset>
+    <legend>About:</legend>
+      <label>
+        <input type="radio" name="Sex" value="Мужской" checked="checked">
+        <span>M</span>
+      </label><br>
+      <label>
+        <input type="radio" name="Sex" value="Женский">
+        <span>W</span>
+      </label><br>
+      <input type="text" size="20"> <span>Birthday</span><br>
+      <input type="text" size="20"> <span>Social Status</span><br>
+      <input type="text" size="20"> <span>Address</span><br>
+      <input type="text" size="20"> <span>tel</span><br><br>
+      <div>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </div>      
+    </fieldset>
+  </form>
+  
+  
 </body>
 </html>
