@@ -7,11 +7,44 @@
   <title>Document</title>
 </head>
 <body>
-  <div style="overflow:hidden;">
-    <div style="width:150px; height:150px; box-sizing:border-box; background:#ff0000; float:right;"></div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, deleniti, ducimus, dolor architecto animi blanditiis laudantium quia fuga id obcaecati quibusdam maxime temporibus nihil porro magnam doloribus explicabo provident nesciunt similique dignissimos harum beatae placeat optio nulla odit eaque sint ad ipsam quisquam numquam error laboriosam saepe aperiam rerum libero.</p>
-    <div style="clear:both;"></div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, dolorum, fugit deleniti in fugiat dignissimos culpa similique reprehenderit praesentium autem ad voluptas odio nam officia!</p>
+  <style>
+    #wrapper {color: #0ff !important;}
+    #wrapper .inner-wrapper .three.additional {color: #f00;}
+    .inner-wrapper {color: #00f;}
+    #wrapper .three {color:#fff;}
+    #wrapper li {color: #000;}
+    .inner-wrapper li {color: #f0f;}
+    .inner-wrapper .three {color: #f00;}
+    #wrapper .inner-wrapper li {color: #fff;}
+
+
+    .wrap a {color: #f0f;}
+    .my-list a {color: #f00;}
+  </style>
+  <div id = "wrapper">
+    <div class = "inner-wrapper">
+      <ul>
+        <li>Первый</li>
+        <li>Второй</li>
+        <li class="three additional">Третий</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class = "wrap">
+  <a href="#">Some link</a>
+    <ul class="my-list">
+      <li>
+        <a href="#">Первый</a>
+      </li>
+      <li>
+        <a href="#">Второй</a>
+      </li>
+      <li>
+        <a href="#">Третий</a>
+      </li>
+    </ul>
+  <a href="#">Some link 2</a>
   </div>
 </body>
 </html>
